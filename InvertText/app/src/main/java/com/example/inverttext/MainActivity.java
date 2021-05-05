@@ -3,6 +3,7 @@ package com.example.inverttext;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -17,14 +18,13 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<String> userInput = new ArrayList<>();
-
+    ArrayList<String> userInput = new ArrayList<>(); //opretter en tom arraylist ved navn userInput
 
     public void TextHandler(View v){
         TextView U = findViewById(R.id.Input);
         String getString = U.getText().toString();
 
-        userInput.add(getString);
+        userInput.add(getString); //smider brugerens text ind i arraylist
 
 
         Intent intent = new Intent(this, BackwardsText.class);
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        userInput = new ArrayList<>();
+
+        userInput = new ArrayList<>(); //instaciere Arraylist kaldt userInput
     }
 }
