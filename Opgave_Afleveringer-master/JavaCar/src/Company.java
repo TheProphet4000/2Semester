@@ -1,0 +1,1 @@
+public enum Company { Audi,Mercedes,Skoda,Renault,Fiat,Corvette,Ford }

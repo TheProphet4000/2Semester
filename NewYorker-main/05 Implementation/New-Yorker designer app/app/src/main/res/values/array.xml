@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "forhandler">
+
+        <item>XL Byg</item>
+        <item>STARK</item>
+        <item>Forhandler1</item>
+        <item>Forhandler2</item>
+        <item>Forhandler3</item>
+
+
+
+    </string-array>
+
+
+</resources>
